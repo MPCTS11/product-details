@@ -1,0 +1,18 @@
+customer request response models
+
+
+http://localhost:8090/customer-address-info/address-details?id=1234567
+
+CutomerAddressDeatailsReponse:return new String[] { "/" };
+
+{
+"id":1234567,
+"name":"madhu",
+"address":"chennai",
+"postalCode":600119,
+"mobile":"8190876203"
+}
+
+
+oracleDNBB:
+
