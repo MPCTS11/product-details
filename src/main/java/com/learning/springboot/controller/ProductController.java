@@ -28,6 +28,7 @@ public class ProductController {
 
 	@PostMapping("/create-product")
 	public ResponseEntity<String> addProduct(@RequestBody Product product) throws ProductInValidRequest {
+		
 		Product productResponse = productService.addProduct(product);
 		if (productResponse != null) {
 			return new ResponseEntity<String>("Product Created Successfully" , HttpStatus.CREATED);
@@ -37,8 +38,7 @@ public class ProductController {
 	}
 
 	@GetMapping("/get-products")
-	public List<Product> getAllProducts(Product product) {
-		
+	public List<Product> getAllProducts(Product product) {		
 		return productService.getAllProducts(product);
 	}
 
